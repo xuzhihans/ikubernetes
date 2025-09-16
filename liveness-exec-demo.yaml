@@ -9,4 +9,4 @@ spec:
       livenessProbe:
         exec:
           command: ["/bin/sh", "-c", "curl -s http://127.0.0.1:80/livez | grep -q 'OK'"]
-  restartPolicy: Always
+  restartPolicy: Never
